@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ambrosia Bake House</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>    
+<body>
+  <header class="navbar">
+    <div class="logo">Ambrosia Bake House</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart" class="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <img src="images/mk-s-mK7CH6zAmA8-unsplash.jpg" alt="Bakery Hero Image">
+    <div class="hero-text">
+      <h1>Welcome to Ambrosia Bake House</h1>
+      <p>Freshly Baked Delights Every Day!</p>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/alex-garcia-ThTqBjidL7E-unsplash.jpg" alt="Chocolate Cake ">
+        <h3>Chocolate Cake</h3>
+        <p>1800/-</p>
+        <button onclick="addToCart('Chocolate', 1800.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\conor-brown-sqkXyyj4WdE-unsplash.jpg" alt="Butter Croissant">
+        <h3>Butter Croissant</h3>
+        <p>1000/-</p>
+        <button onclick="addToCart('Butter Croissant', 1000.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\red-velvet-cake-4917734_1920.jpg" alt="Red Velvet ">
+        <h3>Red Velvet</h3>
+        <p>1800/-</p>
+        <button onclick="addToCart('Red Velvet', 1800.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\alex-garcia-ThTqBjidL7E-unsplash.jpg" alt="Black Forest ">
+        <h3>Black Forest</h3>
+        <p>1600/-</p>
+        <button onclick="addToCart('Black Forest', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\henrik-hjortshoj-XtYPjMTNQUA-unsplash.jpg" alt="Vanilla ">
+        <h3>Vanilla</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Vanilla', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\cake-1850011_1920.jpg" alt="Vancho">
+        <h3>Vancho </h3>
+        <p>1800-2500/-</p>
+        <button onclick="addToCart('Vancho', 1800.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\chocolate-4697063_1920.jpg" alt="Doughnuts">
+        <h3>Doughnuts</h3>
+        <p>300/-</p>
+        <button onclick="addToCart('Doughnuts', 300.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\cake-3307396_1920.jpg" alt="Milk Oreo Blast">
+        <h3>Milk Oreo Blast</h3>
+        <p>1500-2000/-</p>
+        <button onclick="addToCart('Milk Oreo Blast', 2000.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\hamburger-4103070_1920.jpg" alt="Burger">
+        <h3>Burger</h3>
+        <p>300/-</p>
+        <button onclick="addToCart('Burger', 300.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\salad-1264107_1920.jpg" alt="Salads">
+        <h3>Salads</h3>
+        <p>350/-</p>
+        <button onclick="addToCart('Salads', 350.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\bruschetta-6900128_1920.jpg" alt="Starters">
+        <h3>Starters</h3>
+        <p>250/-</p>
+        <button onclick="addToCart('Starters', 250.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\cake-1971552_1920.jpg" alt="Caramella">
+        <h3>Caramella</h3>
+        <p>1300-2000/-</p>
+        <button onclick="addToCart('Caramella', 1300.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\janko-ferlic-h9Iq22JJlGk-unsplash (1).jpg" alt="Coffee">
+        <h3>Coffee</h3>
+        <p>250/-</p>
+        <button onclick="addToCart('Coffee', 250.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\cake-1850011_1920.jpg" alt="Swiss Chocalate">
+        <h3>Swiss Chocolate</h3>
+        <p>300/-</p>
+        <button onclick="addToCart('Swiss Chocalate', 300.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\orange-cake-398966_1920.jpg" alt="Hakuna Matata">
+        <h3>Hakuna Matata</h3>
+        <p>400/-</p>
+        <button onclick="addToCart('Hakuna Matata', 400.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\ee30c4f9-9424-41fb-90af-293bdfefc987.jpg" alt="Nutty Bubble Cake">
+        <h3>Nutty Bubble Cake</h3>
+        <p>300/-</p>
+        <button onclick="addToCart('Nutty Bubble Cake', 300.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\plum-cake-3657644_1920.jpg" alt="Classic Plum">
+        <h3>Classic Plum</h3>
+        <p>450/-</p>
+        <button onclick="addToCart('Classic Plum', 450.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\cake-8233676_1920.jpg" alt="White Chocolate Blueberry Ecstacy">
+        <h3>White Chocalate Blueberry Ecstacy</h3>
+        <p>300/-</p>
+        <button onclick="addToCart('White Chocalate Blueberry Ecstacy', 300.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\cake-1971552_1920.jpg" alt="Fruit Crescent Cake">
+        <h3>Fruit Crescent Cake</h3>
+        <p>1800/-</p>
+        <button onclick="addToCart('Fruit Crescent Cake', 1800.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\cake-4910417_1920.jpg" alt="Special Fruit Cake">
+        <h3>Special Fruit Cake</h3>
+        <p>300/-</p>
+        <button onclick="addToCart('Special Fruit Cake', 300.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\kofi-okyere-xx1USWIvIFc-unsplash.jpg" alt="Red Bee ">
+        <h3>Red Bee</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Red Bee',1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\837261ef-8bcc-4b5e-a224-b6e9b19f8e73.jpg" alt="Blueberry Crush Cake">
+        <h3>Blueberry Crush Cake</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Blueberry Crush Cake', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-roman-odintsov-5060468.jpg" alt="Caramel White Chocalate">
+        <h3>Caramel White Chocalate</h3>
+        <p>2000/-</p>
+        <button onclick="addToCart('Caramel White Chocalate', 2000.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/images product/natalia-gusakova-xgX5CMTDHHM-unsplash.jpg" alt="Mud Cake">
+        <h3>Mud Cake</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Mud Cake', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\chris-hardy-nv9u1_pGEwM-unsplash.jpg" alt="Australian Cake">
+        <h3>Australian Cake</h3>
+        <p>2500/-</p>
+        <button onclick="addToCart('Australian Cake', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\close-up-fancy-dessert.jpg" alt="Blueberry Cheese Cake">
+        <h3>Blueberry Truffle Cake</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Blueberry Cheese Cake', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\hamburger-4103070_1920.jpg" alt="Strawberry Cake">
+        <h3>Strawberry Cake</h3>
+        <p>2000/-</p>
+        <button onclick="addToCart('Strawberry Cake', 2000.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\online-content-creator-fantasy-food-arrangement.jpg" alt="Blueberry Cheesecake">
+        <h3>Blueberry Cheesecake</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Blueberry Cheese Cake', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-nadin-sh-78971847-31631893.jpg" alt="Chocalate Fudge">
+        <h3>Chocalate Fudge</h3>
+        <p>2000/-</p>
+        <button onclick="addToCart('Chocalate Fudge', 2000.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\pexels-danikprihodko-8176230.jpg" alt="Strawberry Icecream Cookies">
+        <h3>Strawberry Icecream Cookies</h3>
+        <p>2000/-</p>
+        <button onclick="addToCart('Strawberry Icecream Cookies', 2000.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\almond-83766_1920.jpg" alt="Almonds">
+        <h3>Almonds</h3>
+        <p>300/-</p>
+        <button onclick="addToCart('Almonds', 300.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\muffins-1329679_1920.jpg" alt="Plain Muffins">
+        <h3>Plain Muffins</h3>
+        <p>500/-</p>
+        <button onclick="addToCart('Plain Muffins', 500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\muffin-3607780_1920.jpg" alt="Jam Muffins">
+        <h3>Jam Muffins</h3>
+        <p>459/-</p>
+        <button onclick="addToCart('Jam Muffins', 459.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\motichoor-7683487_1920.jpg" alt="Orange Laddu (1kg)">
+        <h3>Orange Laddu</h3>
+        <p>299/-</p>
+        <button onclick="addToCart('Orange Laddu', 299.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\almond-5120350_1920.jpg" alt="Homemade Almond Rock (300gm)">
+        <h3>Homemade Almond Rock</h3>
+        <p>999/-</p>
+        <button onclick="addToCart('Homemade Almond Rock', 999.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\apricot-518892_1920.jpg" alt="Dry Fruit Biscotti (200gm)">
+        <h3>Dry Fruit Biscotti</h3>
+        <p>599/-</p>
+        <button onclick="addToCart('Dry Fruit Biscotti', 599.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\indian-sweet-371357_1920.jpg" alt="Gulab Jamun">
+        <h3>Gulab Jamun</h3>
+        <p>899/-</p>
+        <button onclick="addToCart('Gulab Jamun', 899.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\buns-7864270_1920.jpg" alt="Badusha">
+        <h3>Badusha</h3>
+        <p>799/-</p>
+        <button onclick="addToCart('Badusha', 799.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\mufei-xu-yH18-oXg0z4-unsplash.jpg" alt="Desserts">
+        <h3>Desserts</h3>
+        <p>300/-</p>
+        <button onclick="addToCart('Desserts', 300.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\hamburger-4103070_1920.jpg" alt="Gheemade Mysore Pack">
+        <h3>Gheemade Mysore Pack</h3>
+        <p>569/-</p>
+        <button onclick="addToCart('Gheemade Mysore Pack', 569.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\magic-mary-9tWCe5wQsdM-unsplash.jpg" alt="Milk Cake">
+        <h3>Milk Cake</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Milk Cake', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-digitalbuggu-166654.jpg" alt="Nougat">
+        <h3>Nougat</h3>
+        <p>600/-</p>
+        <button onclick="addToCart('Nougat', 600.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\delicious-pink-cookies-arrangement_23-2150707187.avif" alt="Red Velvet Cookies">
+        <h3>Red Velvet Cookies</h3>
+        <p>800/-</p>
+        <button onclick="addToCart('Red Velvet Cookies', 800.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-ludodelot-15467313.jpg" alt="Salted Caramel Mocha Fudge">
+        <h3>Salted Caramel Moucha Fudge</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Salted Caramel Mocha Fudge', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\pexels-anete-lusina-4791303.jpg" alt="White Chocolate Blueberry Torte">
+        <h3>White Chocalate Blueberry Torte</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('White Chocalate Blueberry Torte', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-joshsorenson-1546890.jpg" alt="Hot Cookies">
+        <h3>Hot Cookies</h3>
+        <p>500/-</p>
+        <button onclick="addToCart('Hot Cookies', 500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\karim-elmissiry-JKAHujvgaf4-unsplash.jpg" alt="Badam Cashew Cookies">
+        <h3>Badam Cashew Cookies</h3>
+        <p>500/-</p>
+        <button onclick="addToCart('Badam Cashew Cookies', 500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\pexels-rahibyaqubov-17939220.jpg" alt="Oreo Magic">
+        <h3>Oreo Magic</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Oreo Magic', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-abhinavcoca-291528.jpg" alt="Snicker Cake">
+        <h3>Snicker Cake</h3>
+        <p>2900/-</p>
+        <button onclick="addToCart('Snicker Cake', 2900.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\macadamia-nuts-1098170_1920.jpg" alt="Hazelnut Praline">
+        <h3>Hazelnut Praline</h3>
+        <p>2000/-</p>
+        <button onclick="addToCart('Hazelnut Praline', 2000.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-owpictures-106343.jpg" alt="Brabecue Chicken">
+        <h3>Brabecue Chicken</h3>
+        <p>850/-</p>
+        <button onclick="addToCart('Brabecue Chicken', 850.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-cristianemotafotografia-22674098.jpg" alt="Rainbow Cake">
+        <h3>Rainbow Cake
+        </h3>
+        <p>2000/-</p>
+        <button onclick="addToCart('Rainbow Cake', 2000.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-gabby-k-7144795.jpg" alt="Vanilla Blueberry">
+        <h3>Vanilla Blueberry</h3>
+        <p>2500/-</p>
+        <button onclick="addToCart('Vanilla Blueberry', 2500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-dima-valkov-1186343-3734026.jpg" alt="Mocha Blast">
+        <h3>Mocha Blast</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Mocha Blast', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-pavel-danilyuk-6612663.jpg" alt="Peanut Butter Truffle">
+        <h3>Peanut Butter Truffle</h3>
+        <p>2500/-</p>
+        <button onclick="addToCart('Peanut Butter Truffle', 2500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\pexels-nadin-sh-78971847-31631893.jpg" alt="Chocolate Praline">
+        <h3>Chocalate Praline</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Chocalate Praline', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-kunal-lakhotia-781256899-29173093.jpg" alt="Tandoori Paneer">
+        <h3>Tandoori Paneer</h3>
+        <p>899/-</p>
+        <button onclick="addToCart('Tandoori Paneer', 899.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-antonio-ribeiro-2267606-17019910.jpg" alt="Banoffe Treat">
+        <h3>Banofee Treat</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Banofee Treat', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\images product\pexels-roman-odintsov-5150163.jpg" alt="Real Truffle">
+        <h3>Real Truffle</h3>
+        <p>1500/-</p>
+        <button onclick="addToCart('Real Truffle', 1500.00)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images\caramel-popcorn-3794018_1920.jpg" alt="Caramel Popcorn">
+        <h3>Caramel Popcorn</h3>
+        <p>150/-</p>
+        <button onclick="addToCart('Caramel Popcorn', 150.00)">Add to Cart</button>
+      </div>
+
+      <!-- Add more products as needed -->
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images\jack-barton-K-v4b-jaeBs-unsplash.jpg" alt="Bakery Interior" onclick="openLightbox(this)">
+      <img src="images\yoga-sukma-8DsyYTdVMNo-unsplash.jpg" alt="Product Display" onclick="openLightbox(this)">
+      <img src="images\breads-1867459_1920.jpg" alt="Bakery Exterior" onclick="openLightbox(this)">
+      
+      <!-- Add more gallery images -->
+    </div>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="#" alt="Expanded View">
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>"The best chocolate cake I've ever had!"</p>
+        <h4>- Sarah</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Lovely atmosphere and delightful treats."</p>
+        <h4>- Mark</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Ambrosia Bake House is hands down the best bakery in town.
+          The Cakes are always so fresh & delicious. Highly Recommend."</p>
+        <h4>-Sarath</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I've tried almost everything on their menu, and I’ve never been disappointed. 
+          Every treat is made with love and care"</p>
+        <h4>-Parvathy</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The Cupcakes from Ambrosia Bake House are out of this world. Perfectly moist 
+          and bursting with flavor"</p>
+        <h4>-Arjun</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Whenever i need a special cake for an occasion, Ambrosia Bread Factory is my
+          go to.Their designs are stunning and taste is unmatched."</p>
+        <h4>-Sangeeth</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The bread here is the best I've ever had -so soft, with
+          just the right amount of crunch on the outside."</p>
+        <h4>-Aiswarya</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Ambrosia Bake House's pastries are absolutely perfect, I could
+          eat them everyday and never get tired of them"</p>
+        <h4>- Monika</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I love that Ambrosia Bake House offers vegan options.Its so hard 
+          to find any other bakery."</p>
+        <h4>-Lakshmipriya</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Ambrosia Bake House's Croissants
+          are a dream- flaky,buttery and perfect for any 
+          breakfast and snack."</p>
+        <h4>- Aamymol Sibi</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The attention to detail in each dessert at Ambrosia
+          Bread Factory is incredible, I always feel like I'm feeling special."</p>
+        <h4>-Asif Ashraf</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Best in Class"</p>
+        <h4>- Viswajith</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The cheesecake at Ambrosia is absolutely incredible. 
+          Smooth, creamy, and not too sweet"</p>
+        <h4>-Amitha</h4>
+      </div>
+      <!-- Add more testimonials -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ✅ Order Form Embedded Section -->
+  <section id="order" class="order-form">
+    <h2>Place Your Order</h2>
+    <p style="font-family: 'Courier New', monospace;">Complete the Form Below to Place an Order, We accept Cash on Delivery.</p>
+    <iframe src="https://forms.gle/XFJzQgYsSUQFNu1E7"
+        width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </section>
+  
+  <section id="checkout" class="fade-in">
+    <h2 class="slide-down">Place Your Order</h2>
+    <form id="checkout-form" class="form-animate">
+      <input type="text" id="cust-name" name="entry.123456" placeholder="Your Name" required>
+      <input type="text" id="cust-address" name="entry.234567" placeholder="Address" required>
+      <input type="text" id="cust-city" name="entry.345678" placeholder="City" required>
+      <input type="text" id="cust-zip" name="entry.456789" placeholder="ZIP Code" required>
+      <input type="text" id="cust-phone" name="entry.567890" placeholder="Phone Number" required>
+  
+      <select id="cust-payment" name="entry.678901" required>
+        <option value="">Select Payment Method</option>
+        <option value="Cash on Delivery">Cash on Delivery</option>
+        <option value="UPI">UPI</option>
+      </select>
+  
+      <!-- Hidden field to store cart summary -->
+      <textarea name="entry.789012" id="cart-summary" style="display:none;"></textarea>
+  
+      <div id="cart-items" class="fade-in-delay"></div>
+      <p id="cart-total">Total: ₹0</p>
+  
+      <button type="submit" class="btn-pulse">Place Order</button>
+    </form>
+    <section id="contact-info" class="contact-block">
+      <h2><i class="fas fa-map-marker-alt"></i> Visit Us</h2>
+      <p>Ambrosia Bake House<br>
+        Bakery Jn Krishna Complex- Bakery Junction, Palayam, Thiruvananthapuram
+      Kerala, India</p>
+    
+      <h3><i class="fas fa-phone"></i> Call / WhatsApp</h3>
+      <p><a href="tel:+919497442211">+91 9497442211</a></p>
+    
+      <h3><i class="fas fa-envelope"></i> Email</h3>
+      <p><a href="mailto:info@theambrosia.com">info@theambrosia.com</a></p>
+    
+      <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/theambrosiabakehouse/?hl=en" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/theambrosiabakehouse/" target="_blank" class="fb"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.google.com/maps/dir//Kaimanam,+Pappanamcode,+Thiruvananthapuram,+Kerala+695018/@8.4729168,76.8957248,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b05bbfe46ee3549
+        :0xe09441b12d272fd0!2m2!1d76.9781267!2d8.4729254?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="maps"><i class="fas fa-map-marked-alt"></i></a>
+      </div>
+    </section>
+    
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Us</h2>
+<p>
+  <strong>Ambrosia Bake House</strong>, with over <strong>24 years of baking heritage</strong>, is a beloved 
+  name known for its fresh, wholesome, and flavorful creations. Operating from a dedicated <strong>central 
+  kitchen</strong>, we ensure top-notch quality across all our offerings—from artisanal breads and savory snacks 
+  to exquisite cakes and pastries. With <strong>3 full-service outlets</strong> and <strong>2 convenient pickup 
+  counters</strong>, we are deeply rooted in the community, committed to using only the freshest ingredients,and 
+  driven by a passion for food that brings joy. At Ambrosia, baking isn’t just a craft—it’s a tradition of love, 
+  care,and customer-first service.
+</p>
+      </div>
+    </section>
+<footer>
+  <p>&copy; 2025 Ambrosia Bake House. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
